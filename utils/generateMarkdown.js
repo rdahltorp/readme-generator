@@ -90,7 +90,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-  To view the repo for this app and repos for other projects, you can visit my GitHib profile: ${data.gitHubUsername}
+  To view the repo for this app and repos for other projects, you can visit my GitHib profile: https://github.com/${data.gitHubUsername}
 
   And if you need to contact me with any questions you can do so at: ${data.email}
 
