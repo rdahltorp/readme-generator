@@ -35,14 +35,12 @@ function init() {
     //FIX THE CHOICES SO THEY MATCH THE EXACT LOOK OF IN THE GITHUB BADGES URL - https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
     choices: [
       'None', 
-      'Apache_2.0', 
+      'Apache 2.0', 
       'MIT',
-      'BSD 2-Clause "Simplified"',
-      'BSD 3-Clause "New" or "Revised"',
+      'BSD 2-Clause',
+      'BSD 3-Clause',
       'Boost Software',
-      'Creative Commons Zero v1.0 Universal',
-      'Eclipse Public 2.0',
-      'GNU General Public v2.0',
+      'Creative Commons Zero v1.0',
       'Mozilla Public 2.0',
       'Unlicense'
     ]
@@ -60,7 +58,7 @@ function init() {
   {
     type: 'input',
     name: 'gitHubUsername',
-    message: 'What is your GitHub username?'
+    message: 'What is your GitHub URL?'
   },
   {
     type: 'input',
