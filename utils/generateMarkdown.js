@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `##License: ${renderLicenseBadge(license)}`
+    return `${renderLicenseBadge(license)}`
   }
 }
 
@@ -31,7 +31,37 @@ function generateMarkdown(data) {
   return `# ${data.projectTitle}
 
   ${renderLicenseSection(data.license)}
+  
+  ## Table of Contents 
 
+  - [License](#license)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributions](#contributions)
+  - [Tests](#tests)
+  - [Contact](#contact)
+  
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.installInst}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributions
+  ${data.contributing}
+  
+  ## Tests
+  ${data.tests}
+
+  ## Contact
+
+  To view the repo for this app and repos for other projects, you can visit my GitHib profile: ${data.gitHubUsername}
+
+  And if you need to contact me you can do so at: ${data.email}
 
 `;
 }
