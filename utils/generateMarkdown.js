@@ -28,10 +28,6 @@ function renderLicenseBadge(license) {
   if(license === "Unlicense") {
     return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
   }
-  // if(license !== "None") {
-  //   return `[![License](https://img.shields.io/badge/license-${license}-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
-  // }
-
 }
   
 

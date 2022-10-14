@@ -1,9 +1,15 @@
 // TODO: Include packages needed for this application
 const genMarkdown = require('./utils/generateMarkdown');
 const inquirer = require('inquirer')
+const fs = require('fs')
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(response) {
+  const readMe = response
+
+  fs.writeFile('generatedREADME.md', readMe, (err) =>
+  err ? console.log(err) : console.log('Success! You made a new ReadMe file!'))
+}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -66,7 +72,9 @@ function init() {
     message: 'What is your contact email?'
   }
   ])
-  .then((response) => console.log(genMarkdown(response))) //This to test inputs were recorded.
+  .then((response => {
+    writeToFile(genMarkdown(response))
+  }))
 }
 
 // Function call to initialize app
